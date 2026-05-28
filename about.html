@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Study Helper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .nav-links a {
+            margin: 0 0.6rem;
+            text-decoration: none;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+        .nav-links a.active{
+            color: #60a5fa;
+        }
+        .about-wrap {
+            max-width: 1050px;
+            margin: 70px auto;
+            padding: 0 5%;
+        }
+        .about-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+        .about-card h1 {
+            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .about-card h2 {
+            color: #60a5fa;
+            font-size: 1.3rem;
+            margin: 35px 0 16px;
+        }
+        .about-card p {
+            color: #cbd5e1;
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+        .feature-list {
+            margin-top: 12px;
+            padding-left: 22px;
+        }
+        .feature-list li {
+            color: #cbd5e1;
+            line-height: 1.9;
+            margin: 16px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Study Helper</a>
+        <div class="nav-links">
+            <!-- 回到主页 -->
+            <a href="index.html">Post Questions</a>
+            <a href="school.html">School Boards</a>
+            <a href="homework.html">Homework</a>
+            <a href="material.html">Materials</a>
+            <a href="login.html">Login / Register</a>
+            <!-- 当前页面高亮 -->
+            <a href="about.html" class="active">About</a>
+        </div>
+    </header>
+
+    <div class="about-wrap">
+        <div class="about-card">
+            <h1>About Study Helper</h1>
+            <h2>项目概述 / Overview</h2>
+            <p>Study Helper 是一款面向国际高中生、AP考生、托福/雅思/SAT备考学生的校园互助学习平台。该平台旨在解决大部分学生遇到难题时，因害羞、自卑、碍于情面，不敢直接向老师或同学提问的问题。本平台致力于打造一个低压力、高隐私、简约通透的校内学习社区，让提问不再尴尬，让互助更加简单高效。</p>
+            <h2>核心功能 / Core Features</h2>
+            <ol class="feature-list">
+                <li><strong>多元化发帖求助与招募系统</strong>：学生可以自由选择匿名 / 实名两种模式发布学习提问、难题求助、学习搭子招募。发布内容时，用户可自主设置任务截止时间、悬赏报酬，并添加对应学科标签，例如AP计算机、AP微积分、托福口语、AP心理等，方便其他学生精准检索与作答。</li>
+                <li><strong>师生双端适配作业管理系统</strong>：平台同时支持学生账号与教师账号。教师可发布每日课后作业、同步练习、考试试卷以及各类学习资料；学生能够随时查看全部待完成作业，清晰规划学习任务。系统支持作业自主勾选完成功能，帮助学生告别遗忘作业、学习混乱的问题，所有共享资料免费下载。</li>
+                <li><strong>校园公告与赛事发布</strong>：依托校内专属School Board板块，任课教师可独立发布校园官方通知、近期重要日程、学科竞赛资讯、赛事报名通道及配套备考资料。让学生第一时间掌握校内动态、截止日期与竞赛信息，一站式整合全部校园学习内容。</li>
+                <li><strong>标签+关键词双重检索</strong>：平台内置完整分类标签库，覆盖全品类AP学科与主流出国类考试。用户可通过标签筛选帖子、作业、资料，也可直接关键词搜索，快速定位需要的学习内容。</li>
+                <li><strong>二元身份权限划分</strong>：平台分为学生账号、任课教师账号两类权限，各自拥有专属操作权限，适配教学答疑、互助发帖、资源分享等校园场景，结构简洁，轻量化易管理。</li>
+                <li><strong>全方位隐私安全与举报监管</strong>：匿名模式隐藏全部个人信息，保护学生隐私，禁止网暴与辱骂。平台内置智能举报系统，用户可举报违规内容；单条帖子举报累计达到5次，系统自动下架，维护干净友好的学习社区。</li>
+            </ol>
+            <h2>项目价值 / Project Value</h2>
+            <p>Study Helper 打破传统学习的社交壁垒，弱化提问羞耻感，兼顾学生与老师的使用需求。集合发帖互助、作业管理、公告赛事、资源共享、社区监管于一体，打造专属于国际学校学生，简约舒适、低压力的一站式学习社区。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Study Helper. Made for students, by students.</p>
+    </footer>
+</body>
+</html>
