@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Helper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .nav-links a {
+            margin: 0 0.6rem;
+            text-decoration: none;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+        .nav-links a.active {
+            color: #60a5fa;
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 4rem 5% 2rem;
+        }
+        .welcome-section h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.8rem;
+            color: #ffffff;
+        }
+        .welcome-section p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin: 0 auto 2.5rem;
+            max-width: 800px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto 4rem;
+            padding: 0 5%;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Study Helper</a>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html" class="active">Post Questions</a>
+                <a href="schoolboard.html">School Boards</a>
+                <a href="homework.html">Homework</a>
+                <a href="material.html">Materials</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="welcome-section">
+        <h1>Welcome to Study Helper</h1>
+        <p>A safe space to ask questions, find study partners, and keep track of homework — no judgment, just help.</p>
+    </section>
+
+    <main class="container">
+        <!-- 嵌入你指定的Padlet -->
+        <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4">
+            <p style="padding:0;margin:0">
+                <iframe src="https://padlet.com/embed/wxnnibgtjlyai0ci" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Study Helper. Made for students, by students.</p>
+    </footer>
+</body>
+</html>

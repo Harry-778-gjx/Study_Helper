@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials | Study Helper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .nav-links a {
+            margin: 0 0.6rem;
+            text-decoration: none;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+        .nav-links a.active{
+            color: #60a5fa;
+        }
+        .wrap{
+            max-width:1100px;
+            margin:40px auto;
+            padding:0 5%;
+        }
+        .intro-box{
+            background:rgba(255,255,255,0.05);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:30px;
+        }
+        .intro-box h3{
+            color:#60a5fa;
+            margin-bottom:12px;
+        }
+        .intro-box p{
+            line-height:1.7;
+            color:#cbd5e1;
+            margin:6px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">Study Helper</a>
+    <div class="nav-links">
+        <a href="index.html">Post Questions</a>
+        <a href="schoolboard.html">School Boards</a>
+        <a href="homework.html">Homework</a>
+        <a href="material.html" class="active">Materials</a>
+        <a href="about.html">About</a>
+    </div>
+</header>
+
+<div class="wrap">
+    <!--仅保留介绍文案-->
+    <div class="intro-box">
+        <h3>Materials Introduction</h3>
+        <p>资料板块仅支持文档类文件上传，禁止图片、视频等其他格式，用来统一收纳各科学习资料：AP 讲义、复习讲义、课后习题文档、托福雅思单科备考文稿、真题文档。</p>
+        <p>✅ 文件限制：只接收 PDF、Word、Excel、PPT、TXT 常规文档格式；</p>
+        <p>✅ 沿用现有学科标签：和 Homework 作业页共用一套 AP / 托雅分类标签，上传时打标签分类；</p>
+        <p>✅ 本地缓存：上传记录保存在浏览器本地，刷新页面资料不丢失；</p>
+        <p>✅ 关键词检索：通过科目 / 文件名快速筛选文档；</p>
+        <p>✅ 简易管理：冗余资料一键删除。</p>
+    </div>
+
+    <!--下方直接嵌入Padlet，删掉全部上传、搜索、卡片、JS代码-->
+    <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4">
+        <p style="padding:0;margin:0">
+            <iframe src="https://padlet.com/embed/a95194iyqoaa0u15" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe>
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Study Helper. Made for students, by students.</p>
+</footer>
+</body>
+</html>
